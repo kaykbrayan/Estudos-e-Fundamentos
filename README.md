@@ -14,15 +14,6 @@ Material de referência de HTML e CSS: anotações por tópico, exemplos execut�
 | [`desafios/`](desafios/) | Desafios em sequência |
 | [`projetos-praticos/`](projetos-praticos/) | Projetos de aplicação em sequência |
 
-## Tópicos de HTML
-
-| Tópico | Conteúdo |
-|---|---|
-| [`textos-e-formatacao`](fundamentos-html/textos-e-formatacao/index.html) | Títulos, parágrafos, quebras de linha e separadores |
-| [`links-e-navegacao`](fundamentos-html/links-e-navegacao/index.html) | Links e navegação entre páginas |
-| [`imagens-e-conteudo-visual`](fundamentos-html/imagens-e-conteudo-visual/index.html) | Imagens e conteúdo visual |
-| [`listas`](fundamentos-html/listas/index.html) | Listas ordenadas, não ordenadas e de descrição |
-
 ## Onde encontrar cada coisa
 
 | Objetivo | Local |
