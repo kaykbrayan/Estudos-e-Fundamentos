@@ -54,7 +54,7 @@ estudos-html-css/
 
 ## Origem dos exercícios
 
-Os exercícios, desafios e projetos práticos acompanham a sequência do curso do professor Gustavo Guanabara, do Curso em Vídeo ([link do curso](ADICIONE-AQUI-O-LINK-DA-PLAYLIST)). As soluções são de autoria própria, e o enunciado e o material do curso pertencem ao autor. Os fundamentos e as referências rápidas são de organização e redação próprias.
+Os exercícios, desafios e projetos práticos acompanham a sequência do curso do professor Gustavo Guanabara, do Curso em Vídeo ([link do curso](https://www.youtube.com/@cursoemvideo)). As soluções são de autoria própria, e o enunciado e o material do curso pertencem ao autor. Os fundamentos e as referências rápidas são de organização e redação próprias.
 
 ## Fontes de referência
 
