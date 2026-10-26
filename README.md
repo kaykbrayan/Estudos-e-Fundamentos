@@ -66,6 +66,6 @@ Os exercícios, desafios e projetos práticos acompanham a sequência do curso d
 
 Para conversar sobre oportunidades, tirar dúvidas ou enviar sugestões sobre o material:
 
-- **LinkedIn:** [adicione aqui o link do seu perfil]
+- **LinkedIn:** www.linkedin.com/in/kaykbrayan
 - **E-mail:** [kaykbrayanpereira@gmail.com](mailto:kaykbrayanpereira@gmail.com)
 - **GitHub:** [@kaykbrayan](https://github.com/kaykbrayan)
