@@ -1,36 +1,71 @@
-## Guia deste repositório
+# HTML e CSS
 
-Este é um caderno de estudos **público, versionado e navegável**. Cada conceito de programação que estudo vira três coisas: uma anotação com minhas palavras, um exemplo de código que roda no navegador e um exercício de prática. Tudo fica registrado no histórico de commits, então dá para acompanhar minha evolução do início até aqui.
+Material de referência de HTML e CSS: anotações por tópico, exemplos executáveis e exercícios, organizado para consulta e localização rápida.
 
-Se você tem pouco tempo, leia na ordem abaixo. Em cerca de dois minutos dá para avaliar como eu organizo, documento e pratico.
+## Mapa do material
 
-### As três camadas do estudo
-
-| Camada | Onde está | O que você encontra |
-|---|---|---|
-| **Consulta rápida** | [`conceitos-html.md`](estudos-html-css/conceitos-html.md) | Tabela com cada tag que estudei: para que serve, exemplo curto e link para o tópico completo |
-| **Compreensão** | [`fundamentos-html/`](estudos-html-css/fundamentos-html/) | Um tópico por pasta (por exemplo, textos e formatação), com exemplo em HTML comentado. É a parte autoral: organizo os conceitos do meu jeito |
-| **Prática** | `exercicios/`, `desafios/`, `projetos-praticos/` | Exercícios e projetos que seguem o curso do Gustavo Guanabara (Curso em Vídeo), em sequência. As soluções são minhas |
-
-A mesma estrutura se repete em cada tecnologia: HTML e CSS agora, JavaScript e Python em seguida. Quem entende uma pasta entende todas.
-
-### Como cada tópico é montado
-
-- **Uma pasta por assunto**, com nome claro (`textos-e-formatacao`, `links-e-navegacao`, `listas`...).
-- **Exemplo executável**: basta abrir o `index.html` no navegador, sem instalar nada.
-- **Comentários no código** explicando o que cada elemento faz.
-- **Link de volta** para a tabela de conceitos, para a consulta ficar completa.
-
-### O que você pode verificar aqui
-
-| O que | Onde conferir |
+| Local | Conteúdo |
 |---|---|
-| Organização do projeto | A estrutura de pastas por tópico, repetível entre tecnologias |
-| Documentação técnica | [`conceitos-html.md`](estudos-html-css/conceitos-html.md) e os comentários nos exemplos |
-| Uso de Git e GitHub | O [histórico de commits](../../commits/main), com mensagens descritivas |
-| Fundamentos de HTML | A pasta [`fundamentos-html/`](estudos-html-css/fundamentos-html/), em construção |
-| Constância | A sequência de exercícios e a evolução dos commits |
+| [`conceitos-html.md`](conceitos-html.md) | Referência rápida de tags: finalidade, exemplo e link para o tópico correspondente |
+| [`conceitos-css.md`](conceitos-css.md) | Referência rápida de seletores e propriedades |
+| [`fundamentos-html/`](fundamentos-html/) | Tópicos de HTML, um por pasta, com exemplo de código comentado |
+| [`fundamentos-css/`](fundamentos-css/) | Tópicos de CSS, um por pasta, com exemplo de código comentado |
+| [`exercicios/`](exercicios/) | Exercícios práticos em sequência |
+| [`desafios/`](desafios/) | Desafios em sequência |
+| [`projetos-praticos/`](projetos-praticos/) | Projetos de aplicação em sequência |
 
-### O que ainda não está aqui
+## Tópicos de HTML
 
-Estou no começo da jornada. CSS, JavaScript, Python e **projetos próprios completos** ainda estão no roadmap abaixo, e prefiro mostrar só o que de fato fiz. Cada item novo entra no repositório quando está pronto, e o status acima sempre reflete a realidade.
+| Tópico | Conteúdo |
+|---|---|
+| [`textos-e-formatacao`](fundamentos-html/textos-e-formatacao/index.html) | Títulos, parágrafos, quebras de linha e separadores |
+| [`links-e-navegacao`](fundamentos-html/links-e-navegacao/index.html) | Links e navegação entre páginas |
+| [`imagens-e-conteudo-visual`](fundamentos-html/imagens-e-conteudo-visual/index.html) | Imagens e conteúdo visual |
+| [`listas`](fundamentos-html/listas/index.html) | Listas ordenadas, não ordenadas e de descrição |
+
+## Onde encontrar cada coisa
+
+| Objetivo | Local |
+|---|---|
+| Consultar rapidamente o que uma tag faz | [`conceitos-html.md`](conceitos-html.md) |
+| Consultar rapidamente um seletor ou propriedade de CSS | [`conceitos-css.md`](conceitos-css.md) |
+| Ver a explicação e o exemplo completo de um assunto | `fundamentos-html/<tópico>/` ou `fundamentos-css/<tópico>/` |
+| Ver a prática | [`exercicios/`](exercicios/), [`desafios/`](desafios/) e [`projetos-praticos/`](projetos-praticos/) |
+
+## Padrão de cada tópico
+
+- Uma pasta por assunto, com nome claro em minúsculas e hífens.
+- Um `index.html` executável, que abre diretamente no navegador.
+- Comentários no código explicando a função de cada elemento.
+
+## Estrutura
+
+```
+estudos-html-css/
+├── README.md
+├── conceitos-html.md
+├── conceitos-css.md
+├── fundamentos-html/
+├── fundamentos-css/
+├── exercicios/
+├── desafios/
+└── projetos-praticos/
+```
+
+## Origem dos exercícios
+
+Os exercícios, desafios e projetos práticos acompanham a sequência do curso do professor Gustavo Guanabara, do Curso em Vídeo ([link do curso](ADICIONE-AQUI-O-LINK-DA-PLAYLIST)). As soluções são de autoria própria, e o enunciado e o material do curso pertencem ao autor. Os fundamentos e as referências rápidas são de organização e redação próprias.
+
+## Fontes de referência
+
+- [MDN Web Docs](https://developer.mozilla.org/pt-BR/)
+- [WHATWG HTML Living Standard](https://html.spec.whatwg.org/)
+- [Especificações de CSS (W3C)](https://www.w3.org/Style/CSS/)
+
+## Contato
+
+Para conversar sobre oportunidades, tirar dúvidas ou enviar sugestões sobre o material:
+
+- **LinkedIn:** [adicione aqui o link do seu perfil]
+- **E-mail:** [kaykbrayanpereira@gmail.com](mailto:kaykbrayanpereira@gmail.com)
+- **GitHub:** [@kaykbrayan](https://github.com/kaykbrayan)
