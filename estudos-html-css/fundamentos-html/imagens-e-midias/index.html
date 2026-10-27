@@ -7,7 +7,67 @@
 </head>
 <body>
     
-    <!-- Link Externo -->
-    <a href="https://developer.mozilla.org/">MDN</a>
+    <!-- img: Para Adicionar a Imagem -->
+    <!-- src: Busca a imagem (Pasta ou URL) -->
+    <!-- alt: Texto Mostrado caso a Imagem não Apareça -->
+    <!-- width: Largura -->
+    <!-- height: Altura -->
+    <!-- loading="lazy": Imagem Carrega só Quando está Próxima da Área Visivel -->
+    <img src="imagens/perfil.avif" alt="Pessoa sorrindo em um parque"
+     width="400" height="300" loading="lazy">
+
+    <!-- figure: Agrupa um Conteúdo Visual -->
+    <!-- figcaption: Adiciona uma Legenda Abaixo da Imagem -->
+    <figure>
+        <img src="imagens/paisagem.avif" alt="Montanhas ao amanhecer">
+        <figcaption>Paisagem ao amanhecer.</figcaption>
+    </figure>
+
+    <!-- picture: Sessão que Permite Adicionar Diferentes Versões do Conteúdo (Responsividade) -->
+    <!-- source: Define uma Fonte Alternativa de Imagens, Video e Audios -->
+    <!-- media: Define a Condição da Mídia, como Largura da Tela (ex: max-width= 600px) -->
+    <!-- srcset: Informa a Ordem das Imagens Responsivas a Rodarem -->
+    <!-- type: Informa ao Navegador Qual o Tipo do Arquivo -->
+    <picture>
+        <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+        <img src="imagens/irina-blok.jpg" alt="Banner do site">
+    </picture>
+
+    <!-- audio: Insere Audio na Página (Músicas e Gravações) -->
+    <!-- controls: Exibe Controles para o Usuário Pausar e Controlar  -->
+    <!-- !!!Mensagem Caso o Audio não Abra fica antes de Fechar o </audio>!!! -->
+    <audio controls>
+        <source src="audios/t-rex-roar.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <!-- video: Insere Vídeos na Página -->
+    <!-- poster: Imagem Amostra Antes de Iniciar o Vídeo -->
+    <video controls width="640" poster="imagens/paisagem.avif">
+        <source src="videos/flower.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+    </video>
+
+<!-- -------------------- ALGUNS "CONTROLS" -------------------- -->
+
+    <!-- ALGUNS "CONTROLS" -->
+
+    <!-- controls width: Para Definir Largura do Vídeo -->
+    <video controls width="640"></video>
+
+    <!-- controls muted: Faz o Vídeo íniciar Mutado (Sem Som) -->
+    <video controls muted></video>
+
+    <!-- controls loop: Faz o Vídeo Reiniciar Sempre que Acabar -->
+    <video controls loop></video>
+
+    <!-- controls poster: Adiciona uma Imagem Principal Antes do Vídeo Iniciar -->
+    <video controls poster=""></video>
+
+    <!-- track: Adiciona Legendas nos Vídeos ou Áudios -->
+    <!-- kind: Define o Tipo do texto na Legenda (ex: subtitles) -->
+    <!-- srclang: Define o Idioma da Legenda -->
+    <!-- label: Define a Qual Área essa Sessão Pertence no Código -->
+    <track src="videos/flower.mp4" kind="subtitles" srclang="pt-BR" label="Português">
 </body>
 </html>
