@@ -7,7 +7,71 @@
 </head>
 <body>
     
-    <!-- Classificações de títulos -->
-    <h1>Título 1</h1>
+    <!-- ul: Listas não Ordenadas -->
+    <!-- li: Itens da Lista -->
+    <ul>
+        <li>Item sem ordem</li>
+        <li>Outro item</li>
+    </ul>
+
+    <!-- ol: Listas Ordenadas -->
+    <!-- start: Valor que a Lista Começa a Contar -->
+    <!-- type: Modelo da Lista (Contagem) (ex: Números ou Alg. Romano) -->
+    <!-- value: Define a Posição do Item da Lista (Opcional) -->
+    <ol start="3" type="1">
+        <li>Terceiro</li>
+        <li value="8">Oitavo</li>
+    </ol>
+
+<!-- ------ TIPOS DE TYPE NAS LISTAS ------ -->
+
+    <!-- 1: Ordem Númerica -->
+    <ol type="1">
+        <li>Ordem Númerica</li>
+    </ol>
+
+    <!-- A: Ordem Alfabética Maiúscula-->
+    <ol type="A">
+        <li>Ordem Alfabética Maiúscula</li>
+    </ol>
+
+    <!-- a: Ordem Alfabética Minúscula -->
+    <ol type="a">
+        <li>Item</li>
+    </ol>
+
+    <!-- I: Ordem em Algarismo Romano em Maiúscula -->
+    <ol type="I">
+        <li>Item</li>
+    </ol>
+
+    <!-- i: Ordem em Algarismo Romano em Minúscula -->
+    <ol type="i">
+        <li>Item</li>
+    </ol>
+
+
+<!-- ------ ======================== ------ -->
+
+    <!-- ol reversed: Deixa a Ordem de Trás pra Frente -->
+    <ol reversed>
+        <li>Terceiro</li>
+        <li>Terceiro</li>
+        <li>Terceiro</li>
+        <li value="8">Oitavo</li>
+    </ol>
+
+    <!-- dl: Cria uma Lista para Termos e suas Explicações -->
+    <!-- dt: Termo -->
+    <!-- dd: Explicação -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Estrutura e significado.</dt>
+        <dt>CSS</dt>
+        <dd>Apresentação visual.</dd>
+    </dl>
+
+    <!-- Listas dentro de Listas (Misturadas) -->
+    <li>Frutas<ul><li>Maçã</li></ul></li>
 </body>
 </html>
