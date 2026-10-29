@@ -4,10 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <!-- Classificações de títulos -->
-    <h1>Título 1</h1>
+    <!-- table: Cria a Tabela -->
+    <table>
+        <!-- caption: Título da Tabela (Fora da Tabela Acima) -->
+        <caption>Notas dos Alunos</caption>
+
+        <!-- thead: Agrupa o Cabeçalho da Tabela (Topo)-->
+        <thead>
+            <!-- tr: Cria uma Linha da Tabela -->
+            <tr>
+                <!-- th: Define Titulo da Linha -->
+                <!-- scope: Indica ser Coluna ou Linha Ao Navegador("col" ou "row")-->
+                <!-- col: Coluna (Vertical) -->
+                <!-- row: Linha (Horizontal) -->
+                <th scope="col">Aluno</th>
+                <th scope="col">Nota</th>
+            </tr>
+        </thead>
+
+        <!-- tbody: Agrupa o Corpo da Tabela -->
+        <tbody>
+            <tr>
+                <th scope="row">Ana</th>
+                <!-- td: Dados da Tabela -->
+                <td>9,5</td>
+            </tr>
+            <tr>
+                <th scope="row">João</th>
+                <td>8,0</td>
+            </tr>
+        </tbody>
+        
+        <!-- tfoot: Agrupa o footer da Tabela -->
+        <tfoot>
+            <th scope="row">Média</th>
+            <td>8,75</td>
+        </tfoot>
+    </table>
+
+<!-- ----------- 2. CONCEITO DE TABELAS ----------- -->
+
+    <!-- Ocupamento de Linhas -->
+
+    <!-- COLSPAN -->
+    <table>
+        <tr>
+            <th>Aluno</th>
+            <th>Nota</th>
+        </tr>
+        <tr>
+            <!-- colspan: Ocupa Espaço de Células na Horizontal -->
+            <td colspan="2">Resultado Final</td>
+        </tr>
+    </table>
+
+    <!-- ROWSPAN -->
+    <table>
+        <tr>
+            <th>Turno</th>
+            <!-- rowspan: Ocupa Espaço de Células na Vertical -->
+            <th rowspan="2">Manhã</th>
+        </tr>
+        <tr>
+            <th>Horários</th>
+        </tr>
+    </table>
 </body>
 </html>
