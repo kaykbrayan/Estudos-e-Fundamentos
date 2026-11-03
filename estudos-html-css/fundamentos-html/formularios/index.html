@@ -7,7 +7,41 @@
 </head>
 <body>
     
-    <!-- form: -->
-    <form action=""></form>
+    <!-- get: Mostra os dados na URL -->
+    <form action="envio.php" method="get"></form>
+
+    <!-- form: Cria os formulários -->
+    <!-- action: Define para onde os Dados vão -->
+    <!-- method: Qual o metodo será usado, Mostrar ou Não os Dados na URL -->
+    <!-- post: Esconde os dados na URL -->
+    <form action="envio.php" method="post">
+
+        <!-- fieldset: Cria uma sessão na tabela com borda -->
+        <fieldset>
+            <!-- legend: Cria um Título na Borda do Fieldset -->
+            <legend>Cadastro</legend>
+
+            <!-- "p" ou "div" para agrupar a sessão -->
+            <p>
+                <!-- label: Para Identifica um Campo do Formulário -->
+                <!-- for: Associa ao Campo com um "id" de um input -->
+
+                <!-- input: Local onde o Usuário Insere um Dado -->
+                <!-- type: Tipo do Input -->
+                <!-- "text": Input do Tipo Texto -->
+
+                <!-- name: Nome do Campo Enviado ao Servidor -->
+                <!-- id: Identifica um Elemento Individualmente (Associado ao Label) -->
+
+                <!-- autocomplete: Sugere Completar com Base nos seus Últimos dados Referentes a Área -->
+                <!-- "name": Sugere Nomes já preenchidos no Navegador -->
+
+                <!-- required: Deixa a Sessão Obrigatória -->
+
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" autocomplete="name" required>
+            </p>
+        </fieldset>
+    </form>
 </body>
 </html>
