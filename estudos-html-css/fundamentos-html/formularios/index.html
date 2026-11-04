@@ -107,7 +107,7 @@
 
             <p>
                 <!-- list: id de uma Lista Específica -->
-                <label for="iprofissao">Profissoões</label>
+                <label for="iprofissao">Profissões</label>
                 <input type="text" name="profissao" id="iprofissao" list="listaprofissao">
 
                 <!-- datalist: Cria lista de opções e Permite o Usuário Digitar (relacionado ao List do input) -->
@@ -115,6 +115,98 @@
                     <option value="DEV">Desenvolvedor</option>
                     <option value="PF">Policial Federal</option>
                 </datalist>
+            </p>
+
+            <p> 
+                <!-- textarea: Cria uma área de Mensagem -->
+                <!-- cols: Largura do Bloco -->
+                <!-- rows: Altura do Bloco -->
+                <label for="imensagem">Mensagem</label>
+                <textarea name="mensagem" id="imensagem" cols="30" rows="10" placeholder="Mensagem aqui..."></textarea>
+            </p>
+
+            <p> <!-- type "checkbox": Input do tipo Caixa de Marcação ("check") Permite desmarcar -->
+                <input type="checkbox" name="futebol" id="ifutebol">
+                <label for="ifutebol">Futebol</label>
+                <br>
+                <input type="checkbox" name="basquete" id="ibasquete">
+                <label for="ibasquete">Basquete</label>
+                <br>
+                <input type="checkbox" name="volei" id="ivolei">
+                <label for="ivolei">Vôlei</label>
+            </p>
+
+            <p>
+                <!-- type "radio": Input do tipo Círculo de Marcação (Não Permite Desmarcar) -->
+                <!-- Obs type "radio":  Todos os label devem ter o mesmo "name" -->
+                <input type="radio" name="sexo" id="imasculino">
+                <label for="imasculino">Masculino</label>
+                <br>
+                <input type="radio" name="sexo" id="ifeminino">
+                <label for="ifeminino">Feminino</label>
+            </p>
+
+            <!-- type "submit": Input do tipo Enviar -->
+            <input type="submit" value="Enviar">
+
+            <!-- type "reset": Input do tipo Limpar -->
+            <input type="reset" value="Limpar">
+
+            <p>
+                <!-- type "tel": Input do tipo Telefone -->
+                <label for="itelefone">Telefone</label>
+                <input type="tel" name="telefone" id="itelefone" placeholder="(xx) xxxxx-xxxx">
+            </p>
+
+            <p>
+                <!-- type "url": Input do tipo Link (url) -->
+                <label for="isite">Site</label>
+                <input type="url" name="site" id="isite" placeholder="https://www.exemplo.com">
+            </p>
+
+            <p>
+                <!-- type "search": Input do tipo Pesquisar -->
+                <label for="ipesquisar">Pesquisar</label>
+                <input type="search" name="pesquisar" id="ipesquisar" placeholder="Digite sua pesquisa">
+            </p>
+
+            <p>
+                <!-- type "time": Input do tipo Horário -->
+                <label for="ihorario">Horário</label>
+                <input type="time" name="horario" id="ihorario">
+            </p>
+
+            <p>
+                <!-- type "datetime-local": Input do tipo Data e Horário -->
+                <label for="idataehorario">Data e Horário</label>
+                <input type="datetime-local" name="dataehorario" id="idataehorario">
+            </p>
+
+            <p>
+                <!-- type "month": Input do tipo Mês e Ano -->
+                <label for="imes">Mês</label>
+                <input type="month" name="mes" id="imes">
+            </p>
+
+            <p>
+                <!-- type "week": Input do tipo Semana do Ano -->
+                <label for="isemana">Semana</label>
+                <input type="week" name="semana" id="isemana">
+            </p>
+
+            <p>
+                <!-- type "range": Input do tipo Controle Deslizante -->
+                <label for="iavaliacao">Avaliação</label>
+                <input type="range" name="avaliacao" id="iavaliacao" min="1" max="10" value="3">
+            </p>
+
+            <p>
+                <!-- type "hidden": Input Escondido -->
+                <input type="hidden" name="codigo" value="1234">
+            </p>
+
+            <p>
+                <input type="button" value="Clique Aqui">
             </p>
 
         </fieldset>
