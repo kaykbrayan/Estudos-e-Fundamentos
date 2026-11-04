@@ -34,13 +34,89 @@
                 <!-- id: Identifica um Elemento Individualmente (Associado ao Label) -->
 
                 <!-- autocomplete: Sugere Completar com Base nos seus Últimos dados Referentes a Área -->
-                <!-- "name": Sugere Nomes já preenchidos no Navegador -->
+                <!-- type "name": Sugere Nomes já preenchidos no Navegador -->
 
                 <!-- required: Deixa a Sessão Obrigatória -->
 
                 <label for="inome">Nome</label>
                 <input type="text" name="nome" id="inome" autocomplete="name" required>
             </p>
+
+            <p>
+                <!-- type "email": Input do tipo Email -->
+                <!-- autocomplete "email": Sugere Emails já preenchidos no Navegador -->
+                <!-- placeholder: Texto com Pouca Opacidade Dentro do Input -->
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" placeholder="exemplo@gmail.com" required>
+            </p>
+
+            <p>
+                <!-- type "password": Input do tipo Senha -->
+                <!-- minlength: Define Quantidade de Caracteres Mínimo Permitida -->
+                <!-- maxlength: Define Quantidade de Caracteres Máximo Permitida -->
+                <label for="isenha">Senha</label>
+                <input type="password" name="senha" id="isenha" minlength="8" maxlength="20" required>
+            </p>
+
+            <p>
+                <!-- type "number": Input do tipo Número -->
+                <!-- min: Valor Mínimo Permitido -->
+                <!-- max: Valor Máximo Permitido -->
+                <!-- value: Deixa um valor fixo Inicialmente (Número, Cor...) -->
+                <label for="iidade">Idade</label>
+                <input type="number" name="idade" id="iidade" min="18" max="100" value="18" required>
+            </p>
+
+            <p>
+                <!-- type "date": Input do tipo Data (dia/mês/ano) -->
+                <label for="idata">Data</label>
+                <input type="date" name="data" id="idata">
+            </p>
+
+            <p> 
+                <!-- type "color": Input do tipo Cor -->
+                <label for="icor">Cor</label>
+                <input type="color" name="cor" id="icor" value="#00ff00">
+            </p>
+
+            <p> 
+                <!-- type "file": Input do tipo Arquivo -->
+                <!-- accept: Indica os Formatos de Arquivos Permitidos -->
+                <label for="iarquivo">Arquivo</label>
+                <input type="file" name="arquivo" id="iarquivo" accept=".pdf,image/*">
+            </p>
+
+            <p>
+                <!-- select: Cria uma Lista Suspensa de Opções -->
+                <!-- optgroup: Separa as Opções por Grupos dentro do Select -->
+                <!-- option: Cria uma opção dentro do select -->
+                <label for="iestados">Estados</label>
+                <select name="estados" id="iestados">
+
+                    <optgroup label="Nordeste">
+                        <option value="PE">Pernambuco</option>
+                    </optgroup>
+
+                    <optgroup label="Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+
+                </select>
+            </p>
+
+            <p>
+                <!-- list: id de uma Lista Específica -->
+                <label for="iprofissao">Profissoões</label>
+                <input type="text" name="profissao" id="iprofissao" list="listaprofissao">
+
+                <!-- datalist: Cria lista de opções e Permite o Usuário Digitar (relacionado ao List do input) -->
+                <datalist id="listaprofissao">
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="PF">Policial Federal</option>
+                </datalist>
+            </p>
+
         </fieldset>
     </form>
 </body>
