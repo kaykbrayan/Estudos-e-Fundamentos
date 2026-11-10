@@ -15,8 +15,40 @@
         <p>Conteúdo Expansível</p>
     </details>
 
-    <dialog>
+    <!-- dialog: Gera uma Caixa de Diálogo -->
+    <!-- open: Faz a Caixa ser Vísivel ao Usuário -->
+    <dialog open>
     <p>Olá! Esta é uma caixa de diálogo.</p>
-</dialog>
+        <form action="dialog">
+            <button>Fechar</button>
+        </form>
+    </dialog>
+
+    <!-- template: Deixa um modelo guardado no HTML (NãO Exibido Diretamente no Navegador) -->
+    <template id="card-template">
+        <article class="card">
+            <h2>Título</h2>
+            <p>Descrição</p>
+        </article>
+    </template>
+
+    <!-- iframe: Adiciona um documento ou página dentro da Página atual  -->
+    <iframe 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="Página incorporada"
+        loading="lazy" 
+        width="600" 
+        height="400">
+    </iframe>
+
+    <!-- canvas: Cria uma Área de Desenho que Pode ser Manipulada (Através do Javascript)  -->
+    <canvas width="300" height="150">
+        Seu navegador não suporta canvas.
+    </canvas>
+
+    <!-- svg: Cria formatos de Gráficos Vetoriais que Permite Criar Imagens  -->
+    <svg viewBox="0 0 100 100" role="img" aria-label="Círculo azul">
+        <circle cx="50" cy="50" r="40" fill="blue"></circle>
+    </svg>
 </body>
 </html>
