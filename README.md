@@ -1,6 +1,6 @@
 # HTML e CSS
 
-Material de referência de HTML e CSS: anotações por tópico, exemplos executáveis e exercícios, organizado para consulta e localização rápida.
+Material de referência de HTML e CSS: anotações por tópico e exemplos executáveis, organizado para consulta e localização rápida.
 
 ## Mapa do material
 
@@ -10,9 +10,6 @@ Material de referência de HTML e CSS: anotações por tópico, exemplos execut�
 | [`conceitos-css.md`](conceitos-css.md) | Referência rápida de seletores e propriedades |
 | [`fundamentos-html/`](fundamentos-html/) | Tópicos de HTML, um por pasta, com exemplo de código comentado |
 | [`fundamentos-css/`](fundamentos-css/) | Tópicos de CSS, um por pasta, com exemplo de código comentado |
-| [`exercicios/`](exercicios/) | Exercícios práticos em sequência |
-| [`desafios/`](desafios/) | Desafios em sequência |
-| [`projetos-praticos/`](projetos-praticos/) | Projetos de aplicação em sequência |
 
 ## Onde encontrar cada coisa
 
@@ -21,7 +18,6 @@ Material de referência de HTML e CSS: anotações por tópico, exemplos execut�
 | Consultar rapidamente o que uma tag faz | [`conceitos-html.md`](conceitos-html.md) |
 | Consultar rapidamente um seletor ou propriedade de CSS | [`conceitos-css.md`](conceitos-css.md) |
 | Ver a explicação e o exemplo completo de um assunto | `fundamentos-html/<tópico>/` ou `fundamentos-css/<tópico>/` |
-| Ver a prática | [`exercicios/`](exercicios/), [`desafios/`](desafios/) e [`projetos-praticos/`](projetos-praticos/) |
 
 ## Padrão de cada tópico
 
@@ -38,14 +34,7 @@ estudos-html-css/
 ├── conceitos-css.md
 ├── fundamentos-html/
 ├── fundamentos-css/
-├── exercicios/
-├── desafios/
-└── projetos-praticos/
 ```
-
-## Origem dos exercícios
-
-Os exercícios, desafios e projetos práticos acompanham a sequência do curso do professor Gustavo Guanabara, do Curso em Vídeo ([link do curso](https://www.youtube.com/@cursoemvideo)). As soluções são de autoria própria, e o enunciado e o material do curso pertencem ao autor. Os fundamentos e as referências rápidas são de organização e redação próprias.
 
 ## Fontes de referência
 
