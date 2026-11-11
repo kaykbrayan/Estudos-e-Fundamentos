@@ -1,0 +1,40 @@
+/* Por Tipos de Tag (h1, p, img...)*/
+p {
+    color: darkcyan;
+}
+
+/* Classe */
+/* Representado por um "." Usado Para 2 ou Mais Elementos*/
+.card { 
+    padding: 15px; 
+}
+
+/* ID */
+/* Representado por uma "#" Usado para 1 Elemento Único */
+#principal { 
+    max-width: 600px; 
+}
+
+/* Universal */
+/* Significa que Será pra todos os Elementos */
+* { 
+    box-sizing: border-box; 
+}
+
+/* Agrupamento */
+/* Para Varias Tags com a Mesma Declaração de Estilo, separadas por "," */
+h1, h2, h3 { 
+    font-family: Arial, sans-serif; 
+}
+
+/* Descendente */
+/* Para tags dentro de tags (exemplo: p dentro do footer) */
+nav a { 
+    text-decoration: none; 
+}
+
+/* Filho direto */
+/* Seleciona Diretamente a tag que está dentro do ID ou Class respectivo */
+.lista > li { 
+    margin-block: .5rem; 
+}
