@@ -38,3 +38,77 @@ nav a {
 .lista > li { 
     margin-block: .5rem; 
 }
+
+/* Irmão adjacente (O Próximo) */
+/* Seleciona Imediatamente o elemento depois do elemento do mesmo Nível */
+h2 + p { font-weight: bold; }
+
+/* Irmão geral (Todos os Próximos)*/
+/* Seleciona Todos os Elementos depois do elemento do mesmo Nível */
+h2 ~ p { color: #555; }
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* Atributos */
+
+/* Exemplo 1 */
+/* Dentro dos Colchetes é onde o CSS deve puscar o Elemento no HTML */
+/* [type="email"]: Faz o CSS editar apenas os input do tipo email */
+input [type="email"] { 
+    border-color: teal; 
+}
+
+/* Exemplo 2 */
+/* [href^="https"]: Faz o CSS editar apenas os input do tipo email */
+
+/* ^=  Começa com */
+/* $=  Termina com */
+/* =  Exatamente igual */
+/* ~=  Contém uma palavra específica */
+/* *=  Contém determinado texto em qualquer posição */
+a [href^="https"] { 
+    color: green; 
+}
+
+/* Exemplo 3 */
+/* [alt]: Faz o CSS editar apenas as imagens com um alt */
+img [alt] { 
+    outline: 0; 
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* Pseudo-classes */
+/* Edita o Estado, Condição ou Posição de um Elemento no HTML */
+
+/* :hover - Edita Quando o Mouse Passa por Cima */
+a:hover { 
+    color: red; 
+}
+
+/* :focus-visible - Edita quando o Elemento é Selecionado pelo TAB do Teclado */
+button:focus-visible { 
+    outline: 3px solid orange; 
+}
+
+/* :checked - Edita quando o Elemento é Marcado (Checklist) */
+input:checked { 
+    accent-color: green; 
+}
+
+/* :nth-child(2n) - Edita o Elemento de 2 em 2 */
+li:nth-child(2n) { 
+    background: #dad7d7d0; 
+}
+
+/* :first-child - Edita o Primeiro Elemento de Parágrafo Sozinho (Desacompanhado) */
+p:first-child { 
+    margin-top: 20px; 
+}
+
+/* :required - Edita o Elemento que contém Required */
+input:required { 
+    border-left: 3px solid red; 
+}
+
+/* ----------------------------------------------------------------------------------------------- */
