@@ -54,7 +54,7 @@ h2 ~ p { color: #555; }
 /* Exemplo 1 */
 /* Dentro dos Colchetes é onde o CSS deve puscar o Elemento no HTML */
 /* [type="email"]: Faz o CSS editar apenas os input do tipo email */
-input [type="email"] { 
+input[type="email"] { 
     border-color: teal; 
 }
 
@@ -66,13 +66,14 @@ input [type="email"] {
 /* =  Exatamente igual */
 /* ~=  Contém uma palavra específica */
 /* *=  Contém determinado texto em qualquer posição */
-a [href^="https"] { 
+/* |=  Atributo com Exato Valor seguido de - (ex: pt-br) */
+a[href^="https"] { 
     color: green; 
 }
 
 /* Exemplo 3 */
 /* [alt]: Faz o CSS editar apenas as imagens com um alt */
-img [alt] { 
+img[alt] { 
     outline: 0; 
 }
 
@@ -112,3 +113,21 @@ input:required {
 }
 
 /* ----------------------------------------------------------------------------------------------- */
+
+/* Pseudo-elementos */
+/* Altera a Composição de um Elemento, Altera a Forma, ou Adiciona Algo */
+
+/* ::before - Adiciona um Elemento Antes do Elemento Proposto */
+.card::before { 
+    content: "★"; 
+}
+
+/* ::first-letter - Edita a Primeira Letra de um Texto */
+p::first-letter { 
+    font-size: 2em; 
+}
+
+/* ::selection - Altera a Cor de Quando Seleciona um Texto com o Mouse */
+::selection { 
+    background: gold; 
+}
