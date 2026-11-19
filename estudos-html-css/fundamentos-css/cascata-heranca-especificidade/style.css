@@ -1,0 +1,42 @@
+/* Ordem, origem, importância, especificidade e camadas influenciam cascata */
+:root { 
+    color: #222; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: inherit;
+}
+
+p { 
+    color: #333; 
+}
+
+.texto { 
+    color: blue; 
+}
+
+#aviso { 
+    color: red; 
+}
+
+/* Herança */
+.card { 
+    color: #222; 
+}
+.card a { 
+    color: inherit; 
+}
+
+/* Variáveis e valores especiais */
+:root { --cor-principal: #2563eb; }
+.botao { background: var(--cor-principal); }
+.elemento { color: initial; }
+.elemento { color: unset; }
+.elemento { color: revert; }
+
+/* Camadas */
+@layer reset, base, components, utilities;
+@layer base {
+  body { margin: 0; }
+}
