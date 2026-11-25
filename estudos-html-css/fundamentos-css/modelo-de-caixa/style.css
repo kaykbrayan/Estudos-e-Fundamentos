@@ -1,0 +1,89 @@
+/* Modelo de Caixa */
+/* Define como os elementos HTML ocupam espaço na página */
+
+/* box-sizing */
+/* Define como o tamanho total do elemento será calculado */
+
+/* ::before - Antes de tudo */
+/* ::after - Depois de tudo */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Conteúdo */
+/* É a área interna onde ficam textos, imagens e outros elementos */
+
+/* width */
+/* Define a largura do elemento */
+
+/* height */
+/* Define a altura do elemento */
+
+/* min-height */
+/* Define a altura mínima que o elemento pode ter */
+
+/* padding */
+/* Define o espaço interno entre o conteúdo e a borda */
+
+/* border */
+/* Define a borda ao redor do elemento */
+
+/* margin */
+/* Define o espaço externo entre o elemento e outros elementos */
+.caixa {
+    width: 300px;
+    height: 150px;
+    min-height: 100px;
+    padding: 20px;
+    border: 2px solid #222;
+    margin: 24px;
+}
+
+
+/* Colapso de Margens */
+/* Margens podem colapsar em certos contextos */
+
+/* flow-root */
+/* Cria um novo contexto de formatação e impede determinados comportamentos de colapso */
+.sem-colapso {
+    display: flow-root;
+}
+
+/* Controle de Overflow */
+/* Define como o conteúdo que ultrapassa os limites do elemento será tratado */
+
+/* overflow: auto */
+/* Adiciona barras de rolagem quando o conteúdo ultrapassa o espaço disponível */
+
+/* max-height */
+/* Define a altura máxima que o elemento pode atingir */
+.conteudo {
+    overflow: auto;
+    max-height: 200px;
+}
+
+
+/* Configurações Relacionadas */
+
+/* min-width */
+/* Define a largura mínima que o elemento pode ter */
+
+/* max-width */
+/* Define a largura máxima que o elemento pode ter */
+
+/* max-height */
+/* Define a altura máxima que o elemento pode ter */
+
+/* outline */
+/* Cria uma linha ao redor do elemento sem ocupar espaço no modelo de caixa */
+
+/* overflow-x */
+/* Controla o conteúdo que ultrapassa o elemento no eixo horizontal */
+
+/* overflow-y */
+/* Controla o conteúdo que ultrapassa o elemento no eixo vertical */
+
+/* aspect-ratio */
+/* Define uma proporção entre a largura e a altura do elemento */
