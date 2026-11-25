@@ -1,26 +1,37 @@
 /* Ordem, origem, importância, especificidade e camadas influenciam cascata */
+
+/* :root - Seleciona o elemento raiz do documento */
 :root { 
     color: #222; 
 }
 
+/* Herança */
+/* O color será herdado pelos elementos filhos do body */
 body {
   font-family: Arial, sans-serif;
   color: inherit;
 }
 
+/* Elemento */
+/* Seleciona todos os elementos do tipo p */
 p { 
     color: #333; 
 }
 
+/* Classe */
+/* Representada por "." e pode ser usada em vários elementos */
 .texto { 
     color: blue; 
 }
 
+/* ID */
+/* Representado por "#" e possui maior especificidade que classe e elemento */
 #aviso { 
     color: red; 
 }
 
 /* Herança */
+/* Define uma cor para o elemento pai */
 .card { 
     color: #222; 
 }
@@ -29,14 +40,31 @@ p {
 }
 
 /* Variáveis e valores especiais */
+
+/* Variável */
+/* Cria uma variável CSS para armazenar um valor e reutilizá-lo no código */
 :root { --cor-principal: #2563eb; }
 .botao { background: var(--cor-principal); }
+
+/* initial */
+/* Define a propriedade com seu valor inicial */
 .elemento { color: initial; }
+
+/* unset */
+/* Remove o valor definido e utiliza herança ou o valor inicial da propriedade */
 .elemento { color: unset; }
+
+/* revert */
+/* Reverte o valor para o que seria definido por uma regra anterior */
 .elemento { color: revert; }
 
 /* Camadas */
+
+/* Permitem organizar as regras CSS em diferentes níveis da cascata */
 @layer reset, base, components, utilities;
+
+/* @layer */
+/* Define as regras que pertencem à camada base */
 @layer base {
   body { margin: 0; }
 }
