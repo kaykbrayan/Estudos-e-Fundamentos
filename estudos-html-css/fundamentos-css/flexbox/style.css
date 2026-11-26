@@ -1,0 +1,213 @@
+/* Flexbox */
+/* Modelo de layout usado para organizar elementos em uma dimensão */
+
+
+/* Container Flex */
+/* Transforma o elemento em um container flexível */
+
+/* display: flex - transforma o elemento em um container flexível */
+/* flex-direction - define a direção principal dos itens */
+/* flex-wrap - permite que os itens quebrem para outra linha */
+/* justify-content - alinha os itens no eixo principal */
+/* align-items - alinha os itens no eixo transversal */
+/* align-content - controla o alinhamento das linhas no eixo transversal */
+/* gap - define o espaço entre os itens */
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+
+/* Item Flex */
+/* Define o comportamento individual dos itens dentro do container */
+
+/* flex - define crescimento, redução e tamanho inicial do item */
+/* min-width - define a largura mínima que o item pode ter */
+.item {
+    flex: 1 1 200px;
+    min-width: 0;
+}
+
+
+/* Item específico */
+/* Permite alterar o alinhamento de apenas um item */
+
+/* align-self - altera o alinhamento deste item individualmente */
+.item-destaque {
+    align-self: stretch;
+}
+
+
+/* Inline Flex */
+/* Cria um container flexível que permanece como elemento inline */
+.inline-flex {
+    display: inline-flex;
+}
+
+
+/* Flex Flow */
+/* É uma propriedade abreviada para flex-direction e flex-wrap */
+.flex-flow {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+/* Gap */
+/* Define o espaço entre os itens do container */
+.gap {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Row Gap e Column Gap */
+/* Permitem controlar separadamente os espaços entre linhas e colunas */
+
+/* row-gap - define o espaço entre as linhas */
+/* column-gap - define o espaço entre as colunas */
+.gaps {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+
+/* Flex Grow */
+/* Controla quanto cada item pode crescer para ocupar o espaço disponível */
+.grow {
+    display: flex;
+}
+
+/* flex-grow - define a proporção de crescimento do item */
+.grow-1 {
+    flex-grow: 1;
+}
+
+/* Permite que este item cresça duas vezes mais que um item com valor 1 */
+.grow-2 {
+    flex-grow: 2;
+}
+
+
+/* Flex Shrink */
+/* Controla quanto cada item pode diminuir quando falta espaço */
+
+/* width - define a largura disponível para os itens */
+.shrink {
+    display: flex;
+    width: 300px;
+}
+
+/* flex-shrink - define quanto o item pode diminuir */
+/* width - define o tamanho inicial do item */
+.shrink-1 {
+    flex-shrink: 1;
+    width: 250px;
+}
+
+/* Permite que este item diminua proporcionalmente mais */
+.shrink-2 {
+    flex-shrink: 2;
+    width: 250px;
+}
+
+
+/* Flex Basis */
+/* Define o tamanho inicial do item antes da distribuição do espaço */
+.basis {
+    display: flex;
+}
+
+/* flex-basis - define o tamanho inicial de cada item */
+.basis div {
+    flex-basis: 200px;
+}
+
+
+/* Order */
+/* Controla a ordem visual dos itens dentro do container */
+.ordem {
+    display: flex;
+}
+
+/* order - define a posição visual de cada item */
+.ordem-1 {
+    order: 1;
+}
+
+.ordem-2 {
+    order: 2;
+}
+
+.ordem-3 {
+    order: 3;
+}
+
+
+/* Navbar */
+/* Usa Flexbox para organizar os elementos de uma barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Cards */
+/* Organiza vários cards utilizando Flexbox */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Permite que os cards cresçam, diminuam e tenham 200px como base */
+.card {
+    flex: 1 1 200px;
+}
+
+
+/* Centralização */
+/* Demonstra como centralizar um elemento nos dois eixos */
+
+/* justify-content: center - centraliza o item no eixo principal */
+/* align-items: center - centraliza o item no eixo transversal */
+/* min-height - garante uma altura mínima para visualizar a centralização */
+.centralizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+
+/* Colunas */
+/* Organiza os elementos lado a lado */
+.colunas {
+    display: flex;
+    flex-direction: row;
+}
+
+/* flex: 1 - permite que as colunas ocupem o espaço disponível */
+.colunas div {
+    flex: 1;
+}
+
+
+/* Quebra */
+/* Permite que os itens passem para outra linha quando necessário */
+.quebra {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Permite crescimento, redução e define 150px como tamanho inicial */
+.quebra div {
+    flex: 1 1 150px;
+}
