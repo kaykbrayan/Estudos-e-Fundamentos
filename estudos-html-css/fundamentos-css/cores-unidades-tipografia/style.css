@@ -1,0 +1,347 @@
+/* Cores, Unidades e Tipografia */
+/* Define cores, tamanhos, medidas e características visuais dos textos */
+
+/* Cores */
+
+/* :root */
+/* Define variáveis CSS para armazenar diferentes cores */
+:root {
+    --fundo: #f8fafc;
+    --texto: rgb(20 25 35);
+    --destaque: hsl(220 80% 55%);
+}
+
+/* body */
+/* Define as configurações gerais de cor e tipografia da página */
+body {
+    color: var(--texto);
+    background: var(--fundo);
+    font-family: system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* font-size */
+/* Define o tamanho da fonte */
+
+/* clamp() */
+/* Define um valor mínimo, um valor preferencial e um valor máximo */
+h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+/* max-width */
+/* Define a largura máxima que o elemento pode atingir */
+
+/* ch */
+/* Representa aproximadamente a largura do caractere "0" da fonte utilizada */
+p {
+    max-width: 65ch;
+}
+
+/* Cores por nome */
+/* Permite utilizar nomes predefinidos de cores */
+.cor-nome {
+    color: red;
+}
+
+/* HEX */
+/* Representa uma cor utilizando valores hexadecimais */
+.cor-hex {
+    color: #2563eb;
+}
+
+/* RGB */
+/* Define uma cor utilizando os canais vermelho, verde e azul */
+.cor-rgb {
+    color: rgb(20 25 35);
+}
+
+/* RGBA */
+/* Permite definir vermelho, verde, azul e transparência */
+.cor-rgba {
+    color: rgba(20, 25, 35, 0.5);
+}
+
+/* HSL */
+/* Define a cor utilizando matiz, saturação e luminosidade */
+.cor-hsl {
+    color: hsl(220 80% 55%);
+}
+
+/* HSLA */
+/* Permite definir matiz, saturação, luminosidade e transparência */
+.cor-hsla {
+    color: hsla(220, 80%, 55%, 0.5);
+}
+
+/* Transparência */
+/* Permite tornar uma cor parcialmente transparente */
+.cor-transparente {
+    color: rgb(37 99 235 / 50%);
+}
+
+/* currentColor */
+/* Usa o valor atual da propriedade color do próprio elemento */
+.cor-current {
+    color: var(--destaque);
+    border: 2px solid currentColor;
+}
+
+/* Gradiente */
+/* Cria uma transição gradual entre duas ou mais cores */
+.gradiente {
+    background: linear-gradient(90deg, #2563eb, #9333ea);
+    padding: 20px;
+}
+
+/* Unidades */
+
+/* px */
+/* Unidade de medida fixa em pixels */
+.unidade-px {
+    width: 200px;
+    height: 50px;
+}
+
+/* % */
+/* Define um valor relativo ao tamanho do elemento de referência */
+.unidade-percentual {
+    width: 50%;
+}
+
+/* em */
+/* Unidade relativa ao tamanho da fonte do próprio elemento */
+.unidade-em {
+    font-size: 2em;
+}
+
+/* rem */
+/* Unidade relativa ao tamanho da fonte do elemento raiz */
+.unidade-rem {
+    font-size: 2rem;
+}
+
+/* vw */
+/* Representa uma porcentagem da largura da janela de visualização */
+.unidade-vw {
+    width: 50vw;
+}
+
+/* vh */
+/* Representa uma porcentagem da altura da janela de visualização */
+.unidade-vh {
+    height: 20vh;
+}
+
+/* vmin */
+/* Representa 1% do menor valor entre a largura e a altura da janela */
+.unidade-vmin {
+    width: 20vmin;
+}
+
+/* vmax */
+/* Representa 1% do maior valor entre a largura e a altura da janela */
+.unidade-vmax {
+    width: 20vmax;
+}
+
+/* dvh */
+/* Representa 1% da altura dinâmica da janela de visualização */
+.unidade-dvh {
+    min-height: 20dvh;
+}
+
+/* svh */
+/* Representa 1% da menor altura possível da janela de visualização */
+.unidade-svh {
+    min-height: 20svh;
+}
+
+/* lvh */
+/* Representa 1% da maior altura possível da janela de visualização */
+.unidade-lvh {
+    min-height: 20lvh;
+}
+
+/* ch */
+/* Representa aproximadamente a largura do caractere "0" da fonte */
+.unidade-ch {
+    width: 30ch;
+}
+
+/* ex */
+/* Representa aproximadamente a altura da letra "x" da fonte */
+.unidade-ex {
+    height: 10ex;
+}
+
+/* fr */
+/* Divide o espaço disponível em frações dentro de um Grid */
+.grid-fr {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+.grid-fr div {
+    padding: 20px;
+    background: #ddd;
+}
+
+/* deg */
+/* Representa um ângulo em graus */
+.unidade-deg {
+    transform: rotate(10deg);
+}
+
+/* s */
+/* Define uma duração em segundos */
+.transicao-s {
+    transition: transform 1s;
+}
+
+/* ms */
+/* Define uma duração em milissegundos */
+.transicao-ms {
+    transition: transform 500ms;
+}
+
+/* Tipografia */
+
+/* font-family */
+/* Define a família de fontes utilizada pelo elemento */
+.familia-fonte {
+    font-family: Georgia, serif;
+}
+
+/* font-size */
+/* Define o tamanho da fonte */
+.tamanho-fonte {
+    font-size: 24px;
+}
+
+/* font-weight */
+/* Define o peso ou espessura da fonte */
+.peso-fonte {
+    font-weight: 700;
+}
+
+/* font-style */
+/* Define o estilo da fonte, como normal ou itálico */
+.estilo-fonte {
+    font-style: italic;
+}
+
+/* font-stretch */
+/* Controla o grau de expansão ou condensação da fonte */
+.espessura-fonte {
+    font-stretch: condensed;
+}
+
+/* line-height */
+/* Define a altura de cada linha de texto */
+.altura-linha {
+    line-height: 2;
+}
+
+/* letter-spacing */
+/* Define o espaço entre as letras */
+.espacamento-letras {
+    letter-spacing: 3px;
+}
+
+/* word-spacing */
+/* Define o espaço entre as palavras */
+.espacamento-palavras {
+    word-spacing: 10px;
+}
+
+/* text-align */
+/* Define o alinhamento horizontal do texto */
+.alinhamento {
+    text-align: center;
+}
+
+/* text-indent */
+/* Define o recuo da primeira linha do texto */
+.indentacao {
+    text-indent: 40px;
+}
+
+/* text-transform */
+/* Altera a capitalização do texto */
+.transformacao {
+    text-transform: uppercase;
+}
+
+/* text-decoration */
+/* Adiciona uma decoração ao texto */
+.decoracao {
+    text-decoration: underline;
+}
+
+/* text-shadow */
+/* Adiciona uma sombra ao texto */
+.sombra-texto {
+    text-shadow: 2px 2px 4px #888;
+}
+
+/* white-space */
+/* Controla como os espaços em branco e as quebras de linha são tratados */
+.espaco-branco {
+    white-space: nowrap;
+}
+
+/* overflow-wrap */
+/* Permite quebrar palavras quando elas ultrapassam o espaço disponível */
+.quebra-linha {
+    overflow-wrap: break-word;
+}
+
+/* word-break */
+/* Define como as palavras podem ser quebradas */
+.quebra-palavra {
+    word-break: break-all;
+}
+
+/* hyphens */
+/* Controla a utilização de hífens nas quebras de palavras */
+.hifenizacao {
+    hyphens: auto;
+}
+
+/* text-overflow */
+/* Define como o texto excedente será representado */
+.reticencias {
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* font-variant */
+/* Controla variantes tipográficas da fonte */
+.variante-fonte {
+    font-variant: small-caps;
+}
+
+/* font-feature-settings */
+/* Permite controlar recursos tipográficos específicos da fonte */
+.recursos-fonte {
+    font-feature-settings: "liga" 1;
+}
+
+/* @font-face */
+/* Permite carregar ou definir uma fonte personalizada */
+@font-face {
+    font-family: "FontePersonalizada";
+    src: local("Arial");
+}
+
+/* Usa a fonte definida pelo @font-face */
+.fonte-customizada {
+    font-family: "FontePersonalizada", sans-serif;
+}
