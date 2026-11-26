@@ -1,0 +1,100 @@
+/* Display e Fluxo do Documento */
+/* Define como os elementos são exibidos e como participam do fluxo da página */
+
+/* block */
+/* Faz o elemento ocupar uma linha inteira e começar em uma nova linha */
+.bloco {
+    display: block;
+}
+
+/* inline */
+/* Faz o elemento ocupar apenas o espaço necessário do seu conteúdo */
+.inline {
+    display: inline;
+}
+
+/* inline-block */
+/* Mantém o elemento na mesma linha, mas permite definir largura e altura */
+.inline-bloco {
+    display: inline-block;
+}
+
+/* none */
+/* Remove o elemento da página e também do fluxo do documento */
+.oculto {
+    display: none;
+}
+
+/* flow-root */
+/* Cria um novo contexto de formatação para o conteúdo do elemento */
+.container {
+    display: flow-root;
+}
+
+/* Fluxo Normal */
+/* É o comportamento padrão de posicionamento dos elementos no documento */
+.conteudo {
+    display: block;
+}
+
+/* Contexto de Formatação */
+/* Define uma área independente para organizar o fluxo dos elementos */
+/* O flow-root cria um novo contexto de formatação */
+.container {
+    display: flow-root;
+}
+
+/* contents */
+/* Remove a caixa do próprio elemento, mantendo seus elementos filhos no fluxo */
+/* Deve ser utilizado com cuidado por possíveis impactos na acessibilidade */
+.contents {
+    display: contents;
+}
+
+/* visibility */
+/* Controla se o elemento será visualmente visível */
+.visibilidade {
+    visibility: hidden;
+}
+
+/* opacity */
+/* Define o nível de transparência do elemento */
+.opacidade {
+    opacity: 0.5;
+}
+
+/* overflow */
+/* Controla o conteúdo que ultrapassa os limites do elemento */
+.overflow {
+    width: 200px;
+    height: 80px;
+    overflow: auto;
+}
+
+/* float */
+/* Retira o elemento do fluxo normal e permite que outros conteúdos fluam ao seu redor */
+.float {
+    float: left;
+    width: 120px;
+    height: 80px;
+}
+
+/* clear */
+/* Impede que o elemento fique ao lado de elementos que possuem float */
+.clear {
+    clear: both;
+}
+
+/* Posicionamento para ocultação visual */
+/* Remove o elemento visualmente da área normal sem utilizar display: none */
+.visualmente-oculto {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}

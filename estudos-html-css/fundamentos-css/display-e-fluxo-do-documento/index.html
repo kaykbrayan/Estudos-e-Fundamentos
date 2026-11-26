@@ -8,5 +8,95 @@
 </head>
 <body>
     
+    <main>
+        <h1>Display e Fluxo do Documento</h1>
+
+        <section>
+            <h2>Display</h2>
+
+            <div class="bloco">Elemento block</div>
+
+            <span class="inline">Elemento inline</span>
+
+            <span class="inline-bloco">Elemento inline-block</span>
+
+            <div class="oculto">
+                Este elemento está oculto.
+            </div>
+        </section>
+
+        <section>
+            <h2>Fluxo e Contexto de Formatação</h2>
+
+            <div class="container">
+                <div>Elemento dentro do container</div>
+                <div>Outro elemento dentro do container</div>
+            </div>
+
+            <div class="conteudo">
+                Este conteúdo faz parte do fluxo normal do documento.
+            </div>
+        </section>
+
+        <section>
+            <h2>Contents</h2>
+
+            <div class="contents">
+                <p>Elemento filho do elemento com display: contents.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Visibility</h2>
+
+            <p class="visibilidade">
+                Este elemento fica invisível, mas continua ocupando espaço.
+            </p>
+
+            <p class="visivel">
+                Este elemento continua visível.
+            </p>
+        </section>
+
+        <section>
+            <h2>Opacity</h2>
+
+            <p class="opacidade">
+                Este elemento possui transparência.
+            </p>
+        </section>
+
+        <section>
+            <h2>Overflow</h2>
+
+            <div class="overflow">
+                Este conteúdo será utilizado para testar o comportamento do
+                overflow quando ultrapassar os limites definidos pelo elemento.
+            </div>
+        </section>
+
+        <section>
+            <h2>Float e Clear</h2>
+
+            <div class="float">
+                Elemento com float.
+            </div>
+
+            <p class="texto-float">
+                Este texto será posicionado ao redor do elemento que utiliza
+                float.
+            </p>
+
+            <div class="clear">
+                Elemento que limpa o float anterior.
+            </div>
+        </section>
+
+        <p class="visualmente-oculto">
+            Este conteúdo não aparece visualmente, mas continua disponível
+            para tecnologias assistivas.
+        </p>
+        
+    </main>
 </body>
 </html>
