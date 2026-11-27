@@ -1,0 +1,165 @@
+/* CSS Grid */
+/* Modelo de layout usado para organizar elementos em linhas e colunas */
+
+/* Grid Básico */
+/* Transforma o elemento em um container Grid */
+
+/* display: grid - transforma o elemento em um container Grid */
+/* grid-template-columns - define as colunas da grade */
+/* repeat() - repete uma configuração de coluna ou linha */
+/* minmax() - define um tamanho mínimo e máximo para uma faixa */
+/* fr - representa uma fração do espaço disponível */
+/* grid-template-rows - define as linhas da grade */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+/* Cards */
+/* Organiza elementos em uma grade de cards */
+
+/* min-width: 0 - permite que o item possa diminuir dentro da grade */
+.card {
+    min-width: 0;
+}
+
+/* Grade Responsiva */
+/* Cria uma grade que se adapta ao espaço disponível */
+
+/* auto-fit - ajusta automaticamente a quantidade de colunas conforme o espaço disponível */
+.grade-responsiva {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 1rem;
+}
+
+/* Posicionamento */
+/* Permite controlar em quais colunas e linhas um item será colocado */
+
+/* grid-column - define em quais colunas o item será posicionado */
+/* grid-row - define em quais linhas o item será posicionado */
+.item-grande {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+/* Grid Template Areas */
+/* Permite criar uma estrutura visual nomeando áreas da grade */
+
+/* grid-template-areas - define áreas nomeadas dentro da grade */
+.layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+/* grid-area - associa o elemento a uma área nomeada da grade */
+.area-header {
+    grid-area: header;
+}
+
+.area-sidebar {
+    grid-area: sidebar;
+}
+
+.area-main {
+    grid-area: main;
+}
+
+.area-footer {
+    grid-area: footer;
+}
+
+/* Grid Auto */
+/* Controla como o Grid cria e posiciona linhas e colunas automaticamente */
+
+/* grid-auto-columns - define o tamanho das colunas criadas automaticamente */
+/* grid-auto-rows - define o tamanho das linhas criadas automaticamente */
+/* grid-auto-flow - define a direção em que os itens automáticos são posicionados */
+.grid-auto {
+    display: grid;
+    grid-auto-columns: 150px;
+    grid-auto-rows: 100px;
+    grid-auto-flow: row;
+}
+
+/* Place Items */
+/* Controla o alinhamento dos itens dentro de suas próprias áreas */
+
+/* place-items - define o alinhamento dos itens nos dois eixos */
+.place-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+/* Place Content */
+/* Controla o alinhamento da própria grade dentro do espaço disponível */
+
+/* place-content - alinha o conteúdo da grade nos dois eixos */
+.place-content {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 80px);
+    place-content: center;
+    min-height: 300px;
+}
+
+/* Place Self */
+/* Permite alterar o alinhamento de um único item */
+
+/* place-self - define o alinhamento individual de um item nos dois eixos */
+.place-self {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 150px;
+}
+
+/* place-self - altera o alinhamento apenas deste item */
+.item-self {
+    place-self: end;
+}
+
+/* Linhas Nomeadas */
+/* Permite dar nomes às linhas da grade para facilitar o posicionamento */
+
+/* grid-template-columns - cria linhas nomeadas ao redor das colunas */
+.linhas-nomeadas {
+    display: grid;
+    grid-template-columns:
+        [inicio] 1fr
+        [conteudo-inicio] 2fr
+        [conteudo-fim] 1fr
+        [fim];
+}
+
+/* grid-column - utiliza os nomes das linhas para definir a posição */
+.linhas-nomeadas .conteudo {
+    grid-column: conteudo-inicio / conteudo-fim;
+}
+
+/* Auto Fit */
+/* Cria colunas automaticamente e aproveita o espaço disponível */
+
+/* auto-fit - ajusta as colunas existentes para ocupar o espaço disponível */
+.auto-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+/* Auto Fill */
+/* Cria automaticamente o máximo de colunas que couberem na grade */
+
+/* auto-fill - mantém as possíveis colunas mesmo quando não existem itens suficientes */
+.auto-fill {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+}
